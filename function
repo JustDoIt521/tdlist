@@ -1,2 +1,3 @@
-function
-luccke
+<?php
+	echo "hello world";
+?>
