@@ -1,0 +1,43 @@
+<button type="button" class="button" style="float:left;" data-toggle="modal" data-target="#myModal">Login</button>
+<div  class="modal fade" id="myModal" tabindex="-1"  role="dialog" aria-labellemyModalLabel>
+  	<div class="modal-dialog" role="document">
+  		<div class="modal-content">
+	     		<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><aria-hidden="true">&times;</span></button>
+        				<h4 class="modal-title" id="myModalLabel">Login</h4>
+	     		</div>
+	     		<div class="modal-body">
+            					<h1>username:<input type="text" ng-model="loginUsername" name="loginusername"></h1>
+           					<h1>password:<input type="password" ng-model="loginPassword"></h1>
+	    		 </div>
+	     		<div class="modal-footer">
+        			<button type="button" class="btn btn-primary" ng-click="login()">Save changes</b></button>
+	     		</div>
+   	 	</div>
+  	</div>
+  </div>
+<button type="button" class="button" style="float:right;" data-toggle="modal" data-target="#MyModal">Register</button>
+<div  class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labellemyModalLabel>
+  	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+	     		<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><aria-hidden="true">&times;</span></button>
+        				<h4 class="modal-title" id="myModalLabel">Register</h4>
+	     		</div>
+	     		<div class="modal-body">
+	     		<form name="FORM" novalidate>
+            				<h1>Username:<input type="text"  name="username" ng-model="registerUsername" ng-pattern="/[a-zA-Z0-9]/"></h1>
+            				<span ng-show="FORM.username.$error.pattern">名字包含数字和字母</span><br>
+           				<h1>Password:<input type="password" name="pass" ng-model="registerPassword" ng-pattern="/[a-zA-Z0-9]/" ng-minlength="5" ng-maxlength="20"></h1>
+           				<span ng-show="FORM.pass.$error.pattern">密码只含数字字母</span>
+           				<span ng-show="FORM.pass.$error.minlength">密码包含5~20个字符，只含数字，字母</span>
+           				<span ng-show="FORM.pass.$error.maxlength">密码长度小于20个字符</span><br>
+           				<h1>repeatPassword:<input type="password" ng-model="repeat"></h1><br>
+	    		 </form>
+	    		 </div>
+	     		<div class="modal-footer">
+        			<button type="button" class="btn btn-primary" ng-click="register()">Save changes</b></button>
+	     		</div>
+   	 	</div>
+  	</div>
+</div>
