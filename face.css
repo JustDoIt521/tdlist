@@ -1,67 +1,69 @@
-p
-{
-	margin-top:0px;
-	margin-bottom:0px;
-	margin-left:10px;
-}
-/*----------------------*/
-#totalshow
-{
-	background-color:#ede6e2;
-	width:900px;
-	height:550px;
-	border:1px solid #000000;
-	margin-top:20px;
-	margin-left:auto;
-	margin-right:auto;
-}
-/*--------------------------------------*/
-#total_left
-{
-	width:25%;
-	height:100%;
-	border:1px solid #1E90FF;
-	float:left;
-}
-.title_time
-{
-	width:90%;
-	height:50px;
-	border:1px solid #1E90FF;
-	margin-left:10px;
-}
-#content
-{
-	width:90%;
-	height:120px;
-	border:1px solid #1E90FF;
-	margin-left:10px;
-}
-/*-------------------------------------*/
-#total_right
-{
-	width:73%;
-	height:100%;
-	border:1px solid #1E90FF;
-	float:right;
-}
-.content_part
-{
-	background-color:#FFFFFF;
-	width:80%;
-	height:20px;
-	overflow-x: auto;
-	margin-top:20px;
-	margin-left:auto;
-	margin-right:auto;
-}
-/*-----------------------------------*/
-.shadow
-{
-	background-color:#DCDCDC;
-	width:100px;
-	height:100px;
-	margin-left:auto;
-	margin-right:auto;
-	box-shadow: 10px 10px 3px #1E90FF;
-}
++#whole
++{
++	background-color:#1E90FF;
++	width:100%;
++	height:600px;
++}
++#Hmiddle
++{
++	width:0px;
++	height:0px;
++	position:fixed;
++	left:50%;
++	right:50%;
++	top:20%;
++	bottom:80%;
++}
++#MiddleU
++{
++	/*background-color:#DCDCDC;*/
++	width:600px;
++	height:200px;
++	margin-left:-300px;
++	margin-top:-100px;
++	text-align:center;
++	line-height:200px;
++	color:#66009D;
++	font-size:100px;
++}
++#MiddleM
++{
++	/*background-color:#DCDCDC;*/
++	width:600px;
++	height:30px;
++	margin-left:-300px;
++	margin-bottom:-15px;
++	color:#FFFFFF;
++	text-align:center;
++	font-size:30px;
++}
++#MiddleD
++{
++	/*background-color:#DCDCDC;*/
++	width:500px;
++	height:80px;
++	margin-left:auto;
++	margin-right:auto;
++	position:relative;
++	top:420px;
++}
++.button
++{
++	background-color:#66009D;
++	width:150px;
++	height:50px;
++	border:0px;
++	border-radius:10px;
++	color:#FFFFFF;
++	font-size:20px;
++	line-height:50px;
++}
++.input
++{
++	width:200px;
++	height:50px;
++}
++.colro
++{
++	color:red;
++} 
